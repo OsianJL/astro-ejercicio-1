@@ -1,16 +1,23 @@
 ---
-
+import MainLayout from "../layouts/MainLayout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+	<div class="container-1">
+		<div class="container-2"></div>
+	</div>
+</MainLayout>
+
+<style>
+    .container-1 {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(236, 164, 77)
+    }
+
+    .container-2 {
+        width: 40%;
+        height: 100%;
+        background-color: red;
+    }
+</style>
